@@ -1,41 +1,42 @@
-
+html {
+    font-size: 10px;
+}
 body {
     margin: 0%;
-    width : 100%
 }
 section {
     padding: 5px;
 }
 .header {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #85586F;
+    color: #F8EDE3;
 }
 .headerbg {
     position: absolute;
-    height: 100vh;
-    left: 0px;
-}
-.hero {
-    position: absolute;
-    z-index: 1;
-    top: 40%;
-    left: 5%
+    bottom: 2px;
+    z-index: 0;
+    opacity: 0.5;
 }
 .hero>h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     font-stretch: extra-expanded;
-    font-size: 50px;
-    color: #0B2447;
-    margin: 20px
+    font-size: 7rem;
+    margin: 20px;
+    letter-spacing: 3px;
 }
 .hero>h2 {
-    font-family: 'Source Serif 4', serif;
-    font-size: 25px;
-    color: #19376D;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 2rem;
     margin-left: 20px;
+    letter-spacing: 2px;
 }
 
 .bluebg {
-    background-color: #A5D7E8;
+    background-color: #F8EDE3;
 }
 
 .Skills {
@@ -43,6 +44,8 @@ section {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .Skills .one {
     grid-area: 1/1/2/2;
@@ -59,9 +62,9 @@ section {
 }
 
 .Skills h2 {
-    font-size: 50px;
-    font-family:'DM Serif Display', serif;
-    color: #0B2447;
+    font-size: 5rem;
+    font-family: 'Exo 2', sans-serif;
+    color: #D0B8A8;
     margin: 0;
 }
 
@@ -72,9 +75,9 @@ section {
 }
 .Skills ul {
     margin: 40px;
-    color: #576CBC;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 22px;
+    color: #85586F;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 2rem;
     line-height: 40px;
 }
 
@@ -93,28 +96,29 @@ section {
     grid-area: 2/1/3/2;
 }
 .Experience h2 {
-    font-family: 'DM Serif Display', serif;
-    color:#0B2447;
-    font-size: 50px;
+    font-family: 'Exo 2', sans-serif;
+    color:#D0B8A8;
+    font-size: 5rem;
     margin-left: 20px;
     margin-bottom: 5px;
 }
 
 .Experience h3{
-    color:#0B2447;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 22px;
+    color:#D0B8A8;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 2.2rem;
     margin: 5px;
     margin-left: 20px;
 }
 
 .Experience ul {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 22px;
-    color: #576CBC;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 2rem;
+    color: #85586F;
     margin-top: 50  px;
     line-height: 40px;
 }
+
 .imag {
     grid-area: 1/2/3/3;
     display: flex;
@@ -124,6 +128,7 @@ section {
 .imag img {
     height: 200px;
     margin: 20px;
+    filter: invert(100%);
 }
 
 .contact {
@@ -134,27 +139,27 @@ section {
 }
 
 .contact h2 {
-    font-family: 'DM Serif Display', serif;
-    color:#0B2447;
-    font-size: 50px;
+    font-family: 'Exo 2', sans-serif;
+    color: #D0B8A8;
+    font-size: 5rem;
     margin-left: 20px;
     margin-bottom: 5px;
 }
 
 .contact h3 {
-    color:#0B2447;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 22px;
+    color:#D0B8A8;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 2.2rem;
     margin: 5px;
     margin-left: 20px;
 }
 
 .contact ul {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 22px;
-    color: #576CBC;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 2rem;
+    color: #85586F;
     margin-top: 100px;
-    line-height: 40px;
+    line-height: 50px;
 }
 .container {
     background-color: #0B2447;
@@ -162,30 +167,48 @@ section {
     width: 100%;
 }
 footer {
-    background-color: #0B2447;
-    color: white;
-    padding-left: 40px;
+    background-color: #85586F;
+    color: #F8EDE3;
+    padding: 40px;
 }
 footer h2 {
+    font-family: 'Exo 2', sans-serif;
     margin-top: 0%;
-    padding: 40px;
+    padding: 10px;
     padding-left: 0%;
+    font-size: 4rem;
 }
-footer ul {
+.address {
+    font-size: 2rem;
+    font-family: 'Alegreya Sans', sans-serif;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     list-style-type: none;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding-left: 0%;
 }
-footer li {
-    margin-right: 100px;
+.fcontact ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding-left: 0%;
+}
+.fcontact img {
+    height: 30px;
+    margin-right: 20px;
+    filter: invert(100%);
 }
 footer p {
-    padding-bottom: 20px;
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 @media (max-width: 750px) {
+    html {
+        font-size: 6px;
+    }
     .Skills {
         display: grid;
         grid-template-columns: 1fr;
@@ -210,7 +233,7 @@ footer p {
         grid-area: 1/2/2/3;
     }
     .imag img {
-        height: 150px;
+        height: 125px;
     }
     .contact .two {
         grid-area: 2/1/3/3;
